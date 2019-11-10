@@ -1,0 +1,9 @@
+DROP TABLE PRODUCTS;
+
+create TABLE PRODUCTS (
+ID bigint NOT NULL,
+COST bigint NOT NULL,
+NAME character varying(255) NOT NULL,
+CONSTRAINT ID PRIMARY KEY(ID)
+);
+
