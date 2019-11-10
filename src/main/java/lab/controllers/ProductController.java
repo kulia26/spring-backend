@@ -5,6 +5,7 @@ import lab.service.JDBCProductDAO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -12,24 +13,37 @@ class ProductController {
     @Autowired
     private JDBCProductDAO repository;
 
+    /* get all */
     @GetMapping("/products")
-    List<Product> all() {
+    List<Product> getAll() {
         return repository.getAll();
     }
 
-
+    /* find by id */
     @GetMapping("/products/{id}")
     Product one(@PathVariable Long id) {
 
         return repository.getById(id);
     }
 
+    /* find by name */
+    @GetMapping(value = "/products", params = {"name"})
+    ArrayList<Product> findByName(@RequestParam("name") String name) {
+        List<Product> all = repository.getAll();
+        ArrayList<Product> selected = new ArrayList<>();
+        for (Product p : all) {
+            if (p.getName().toLowerCase().contains(name.toLowerCase())) {
+                selected.add(p);
+            }
+        }
+        return selected;
+    }
+
     // put raw json in request body like
     //    {
-    //        "id": 111,
-    //            "phone": "09716682755555",
-    //            "address": "Poltava",
-    //            "name": "Bohdan"
+    //        "id": 21312,
+    //        "cost": 1399,
+    //        "name": "MacBook Pro"
     //    }
 
     @PutMapping("/products/{id}")

@@ -1,8 +1,8 @@
 package lab.dao;
 
-import java.util.List;
-
 import lab.entity.User;
+
+import java.util.List;
 
 public interface UserDAO extends AbstractDAO<User> {
 

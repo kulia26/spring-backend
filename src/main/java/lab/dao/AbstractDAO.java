@@ -10,6 +10,7 @@ public interface AbstractDAO<T> {
 
     //read
     List<T> getAll() throws SQLException;
+
     T getById(Long id) throws SQLException;
 
     //update

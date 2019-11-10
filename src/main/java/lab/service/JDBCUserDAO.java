@@ -1,16 +1,15 @@
 
 package lab.service;
 
-import java.util.List;
-
-import javax.sql.DataSource;
-import lab.entity.User;
-
 import lab.dao.UserDAO;
+import lab.entity.User;
 import lab.mappers.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
+
+import javax.sql.DataSource;
+import java.util.List;
 
 @Component
 public class JDBCUserDAO implements UserDAO {
@@ -28,14 +27,12 @@ public class JDBCUserDAO implements UserDAO {
 
     public User getById(Long id) {
         String SQL_FIND_PERSON = "select * from USERS where id = ?";
-        User user = jdbcTemplate.queryForObject(SQL_FIND_PERSON, new Object[]{id}, new UserMapper());
-        return user;
+        return jdbcTemplate.queryForObject(SQL_FIND_PERSON, new Object[]{id}, new UserMapper());
     }
 
     public List<User> getAll() {
         String SQL_GET_ALL = "select * from USERS";
-        List<User> users = jdbcTemplate.query(SQL_GET_ALL, new UserMapper());
-        return users;
+        return jdbcTemplate.query(SQL_GET_ALL, new UserMapper());
     }
 
     public void delete(User user) {
