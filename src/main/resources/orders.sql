@@ -1,6 +1,6 @@
 drop table lab.ORDERS;
 
-create TABLE ORDERS (
+create TABLE lab.ORDERS (
 ID bigint NOT NULL,
 USER_ID bigint NOT NULL,
 PRODUCT_ID bigint NOT NULL,

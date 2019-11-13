@@ -1,6 +1,6 @@
-DROP TABLE USERS;
+DROP TABLE lab.USERS;
 
-create TABLE USERS (
+create TABLE lab.USERS (
 ID bigint NOT NULL,
 PHONE character varying(255)NOT NULL,
 ADDRESS character varying(255)NOT NULL,

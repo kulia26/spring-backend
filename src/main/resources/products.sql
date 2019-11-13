@@ -1,6 +1,6 @@
-DROP TABLE PRODUCTS;
+DROP TABLE lab.PRODUCTS;
 
-create TABLE PRODUCTS (
+create TABLE lab.PRODUCTS (
 ID bigint NOT NULL,
 COST bigint NOT NULL,
 NAME character varying(255) NOT NULL,

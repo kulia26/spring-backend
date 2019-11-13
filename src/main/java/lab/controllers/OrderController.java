@@ -42,8 +42,8 @@ class OrderController {
     // put raw json in request body like
     //    {
     //        "id": 21312,
-    //        "cost": 1399,
-    //        "name": "MacBook Pro"
+    //        "USER_ID": 1,
+    //        "PRODUCT_ID": 1
     //    }
 
     @PutMapping("/orders/{id}")
@@ -61,7 +61,7 @@ class OrderController {
     @PostMapping(value = "/orders", params = {"user", "product"})
     Order newOrder(@RequestParam("user") Long USER_ID, @RequestParam("product") Long PRODUCT_ID) {
         Order order = new Order();
-        order.setId((long) (Math.random() * 100 * LocalTime.now().getNano()));
+        order.setId((long) (Math.random() * 100 * LocalTime.now().getNano() * LocalTime.now().getHour() * LocalTime.now().getSecond()));
         order.setProductId(PRODUCT_ID);
         order.setUserId(USER_ID);
         repository.create(order);

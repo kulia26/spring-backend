@@ -5,6 +5,7 @@ import lab.service.JDBCProductDAO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,7 +23,6 @@ class ProductController {
     /* find by id */
     @GetMapping("/products/{id}")
     Product one(@PathVariable Long id) {
-
         return repository.getById(id);
     }
 
@@ -39,23 +39,20 @@ class ProductController {
         return selected;
     }
 
-    // put raw json in request body like
-    //    {
-    //        "id": 21312,
-    //        "cost": 1399,
-    //        "name": "MacBook Pro"
-    //    }
-
     @PutMapping("/products/{id}")
     Product updateProduct(@RequestBody Product newProduct) {
         repository.update(newProduct);
         return repository.getById(newProduct.getId());
     }
 
-    @PostMapping("/products")
-    Product newProduct(@RequestBody Product newProduct) {
-        repository.create(newProduct);
-        return repository.getById(newProduct.getId());
+    @PostMapping(value = "/products", params = {"name", "cost"})
+    Product newProduct(@RequestParam("name") String name, @RequestParam("cost") Integer cost) {
+        Product product = new Product();
+        product.setId((long) (Math.random() * 100 * LocalTime.now().getNano() * LocalTime.now().getHour() * LocalTime.now().getSecond()));
+        product.setCost(cost);
+        product.setName(name);
+        repository.create(product);
+        return repository.getById(product.getId());
     }
 
     @DeleteMapping("/products/{id}")
