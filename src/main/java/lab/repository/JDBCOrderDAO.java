@@ -1,5 +1,5 @@
 
-package lab.service;
+package lab.repository;
 
 import lab.dao.OrderDAO;
 import lab.entity.Order;

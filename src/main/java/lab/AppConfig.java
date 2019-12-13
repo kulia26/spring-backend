@@ -15,7 +15,7 @@ public class AppConfig {
     @Bean
     public DataSource dataSource() {
         DriverManagerDataSource ds = new DriverManagerDataSource();
-        ds.setDriverClassName(com.mysql.cj.jdbc.Driver.class.getName());
+        ds.setDriverClassName(com.mysql.jdbc.Driver.class.getName());
         ds.setUrl("jdbc:mysql://localhost:3306/lab");
         ds.setUsername("root");
         ds.setPassword("12345");

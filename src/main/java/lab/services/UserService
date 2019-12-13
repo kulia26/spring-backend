@@ -1,0 +1,32 @@
+package lab.services;
+
+import lab.entity.User;
+import lab.repository.UserRepository;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.Optional;
+
+@Service
+
+@RequiredArgsConstructor
+public class UserService {
+  private final UserRepository productRespository;
+
+  public List<User> findAll() {
+    return productRespository.findAll();
+  }
+
+  public Optional<User> findById(Long id) {
+    return productRespository.findById(id);
+  }
+
+  public User save(User stock) {
+    return productRespository.save(stock);
+  }
+
+  public void deleteById(Long id) {
+    productRespository.deleteById(id);
+  }
+}
