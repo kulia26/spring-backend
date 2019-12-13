@@ -1,9 +1,0 @@
-DROP TABLE lab.PRODUCTS;
-
-create TABLE lab.PRODUCTS (
-ID bigint NOT NULL,
-COST bigint NOT NULL,
-NAME character varying(255) NOT NULL,
-CONSTRAINT ID PRIMARY KEY(ID)
-);
-
