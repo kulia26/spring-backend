@@ -10,22 +10,21 @@ import javax.persistence.*;
 import java.util.Date;
 import java.util.List;
 
+
 @Entity
 
 @Data
-public class User {
+public class Product {
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
 
-  private String phone;
-
-  private String address;
-
   private String name;
 
-  @OneToMany(mappedBy = "user", fetch = FetchType.EAGER)
+  private Integer cost;
+
+  @OneToMany(mappedBy = "product", fetch = FetchType.EAGER)
   @JsonBackReference
   private List<OrderItem> orderItems;
 
@@ -37,16 +36,16 @@ public class User {
   @JsonIgnore
   private Date updatedAt;
 
-  public User(Long id, String name, String address, String phone) {
+  public Product(Long id, String name, Integer cost) {
     this.id = id;
-    this.phone = phone;
-    this.address = address;
     this.name = name;
+    this.cost = cost;
   }
 
-  public User() {
+  public Product() {
 
   }
+
 
   public Long getId() {
     return id;
@@ -54,22 +53,6 @@ public class User {
 
   public void setId(Long id) {
     this.id = id;
-  }
-
-  public String getPhone() {
-    return phone;
-  }
-
-  public void setPhone(String phone) {
-    this.phone = phone;
-  }
-
-  public String getAddress() {
-    return address;
-  }
-
-  public void setAddress(String address) {
-    this.address = address;
   }
 
   public String getName() {
@@ -80,9 +63,17 @@ public class User {
     this.name = name;
   }
 
+  public Integer getCost() {
+    return cost;
+  }
+
+  public void setCost(Integer cost) {
+    this.cost = cost;
+  }
+
 
   @Override
   public String toString() {
-    return "User{" + "id:" + id + ", phone:'" + phone + ", address:'" + address + ", name:'" + name + '}';
+    return "Product: {" + "id:" + id + ", name: " + name + ", cost: " + cost + "}\n";
   }
 }
