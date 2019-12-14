@@ -20,11 +20,11 @@ public class OrderItem {
 
   @ManyToOne
   @JoinColumn
-  private User user;
+  private Product product;
 
   @ManyToOne
   @JoinColumn
-  private Product product;
+  private Basket basket;
 
   @CreationTimestamp
   @JsonIgnore
@@ -34,9 +34,9 @@ public class OrderItem {
   @JsonIgnore
   private Date updatedAt;
 
-  public OrderItem(Long id, User user, Product product) {
+  public OrderItem(Long id, Basket basket, Product product) {
     this.id = id;
-    this.user = user;
+    this.basket = basket;
     this.product = product;
   }
 
@@ -52,12 +52,12 @@ public class OrderItem {
     this.id = id;
   }
 
-  public User getUser() {
-    return user;
+  public Basket getBasket() {
+    return basket;
   }
 
-  public void setUser(User user) {
-    this.user = user;
+  public void setBasket(Basket basket) {
+    this.basket = basket;
   }
 
   public Product getProduct() {
@@ -70,6 +70,6 @@ public class OrderItem {
 
   @Override
   public String toString() {
-    return "Order{" + "id:" + id + ", user:" + this.user.toString() + ", product:" + this.product.toString() + '}';
+    return "OrderItem: {" + "id:" + id + ", basket:" + this.basket.toString() + ", product:" + this.product.toString() + '}';
   }
 }

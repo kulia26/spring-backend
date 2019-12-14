@@ -42,7 +42,7 @@ public class OrderItemRESTController {
 
     return repository.findById(id).map(OrderItem -> {
       OrderItem.setProduct(newOrderItem.getProduct());
-      OrderItem.setUser(newOrderItem.getUser());
+      OrderItem.setBasket(newOrderItem.getBasket());
       return repository.save(OrderItem);
     }).orElseGet(() -> {
       newOrderItem.setId(id);

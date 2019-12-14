@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="70ac98d7-19cb-41a8-ba22-5a543ab2fd82" name="Default Changelist" comment="" />
+    <list default="true" id="70ac98d7-19cb-41a8-ba22-5a543ab2fd82" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab/controllers/BasketRESTController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab/entity/Basket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab/entity/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab/repository/BasketRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab/repository/CategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/create.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lab/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lab/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lab/controllers/OrderItemRESTController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab/controllers/OrderItemRESTController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lab/entity/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab/entity/OrderItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lab/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab/entity/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lab/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lab/AppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lab/AppConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lab/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lab/Main.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -11,14 +28,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.45412233">
+    <splitter split-orientation="horizontal" split-proportion="0.29958677">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/lab/entity/User.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="320">
-                  <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+                <state relative-caret-position="240">
+                  <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
                 </state>
               </provider>
             </entry>
@@ -26,8 +43,35 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/lab/entity/Product.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="300">
-                  <caret line="29" selection-start-line="29" selection-end-line="29" />
+                <state relative-caret-position="206">
+                  <caret line="53" selection-start-line="53" selection-end-line="59" selection-end-column="3" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#1015#1016#0" expanded="true" />
+                    <element signature="e#1036#1037#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/lab/entity/Category.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="592">
+                  <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+                  <folding>
+                    <element signature="e#572#573#0" expanded="true" />
+                    <element signature="e#598#599#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/lab/AppConfig.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="340">
+                  <caret line="23" column="18" lean-forward="true" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -36,69 +80,37 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/lab/controllers/UserRESTController.java">
+            <entry file="file://$PROJECT_DIR$/src/main/java/lab/Main.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="319">
-                  <caret line="41" selection-start-line="41" selection-end-line="41" />
+                <state relative-caret-position="338">
+                  <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#1010#1011#0" expanded="true" />
-                    <element signature="e#1062#1063#0" expanded="true" />
+                    <element signature="e#740#741#0" expanded="true" />
+                    <element signature="e#782#783#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/lab/controllers/OrderItemRESTController.java">
+            <entry file="file://$PROJECT_DIR$/src/main/java/lab/entity/Basket.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="460">
-                  <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
+                <state relative-caret-position="580">
+                  <caret line="38" column="32" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
                   <folding>
-                    <element signature="e#519#520#0" expanded="true" />
-                    <element signature="e#552#553#0" expanded="true" />
-                    <element signature="e#617#618#0" expanded="true" />
-                    <element signature="e#661#662#0" expanded="true" />
-                    <element signature="e#749#750#0" expanded="true" />
-                    <element signature="e#792#793#0" expanded="true" />
-                    <element signature="e#900#901#0" expanded="true" />
-                    <element signature="e#952#953#0" expanded="true" />
-                    <element signature="e#1045#1046#0" expanded="true" />
-                    <element signature="e#1097#1098#0" expanded="true" />
+                    <element signature="e#1095#1096#0" expanded="true" />
+                    <element signature="e#1176#1177#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/lab/controllers/ProductRESTController.java">
+            <entry file="file://$PROJECT_DIR$/src/main/java/lab/repository/BasketRepository.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="219">
-                  <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
-                  <folding>
-                    <element signature="e#509#510#0" expanded="true" />
-                    <element signature="e#542#543#0" expanded="true" />
-                    <element signature="e#605#606#0" expanded="true" />
-                    <element signature="e#649#650#0" expanded="true" />
-                    <element signature="e#731#732#0" expanded="true" />
-                    <element signature="e#774#775#0" expanded="true" />
-                    <element signature="e#872#873#0" expanded="true" />
-                    <element signature="e#922#923#0" expanded="true" />
-                    <element signature="e#1009#1010#0" expanded="true" />
-                    <element signature="e#1061#1062#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/lab/repository/ProductRepository.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="160">
-                  <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
+                <state relative-caret-position="120">
+                  <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
                 </state>
               </provider>
             </entry>
@@ -106,8 +118,17 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/lab/repository/OrderItemRepository.java">
               <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="160">
+                  <caret line="10" selection-start-line="10" selection-end-line="10" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/lab/repository/CategoryRepository.java">
+              <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="180">
-                  <caret line="11" selection-start-line="11" selection-end-line="11" />
+                  <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
                 </state>
               </provider>
             </entry>
@@ -115,29 +136,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/lab/entity/OrderItem.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="220">
-                  <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/pom.xml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="439">
-                  <caret line="31" column="20" lean-forward="true" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/lab/repository/UserRepository.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="220">
-                  <caret line="11" selection-start-line="11" selection-end-line="11" />
+                <state relative-caret-position="20">
+                  <caret line="31" selection-start-line="31" selection-end-line="31" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -153,7 +153,7 @@
             <entry file="file://$PROJECT_DIR$/src/main/java/lab/entity/User.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="240">
-                  <caret line="20" selection-start-line="9" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+                  <caret line="20" selection-start-line="2" selection-start-column="7" selection-end-line="10" selection-end-column="22" />
                 </state>
               </provider>
             </entry>
@@ -161,8 +161,24 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/lab/controllers/UserRESTController.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="220">
-                  <caret line="19" selection-start-line="19" selection-end-line="19" />
+                <state relative-caret-position="280">
+                  <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/lab/controllers/OrderItemRESTController.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="320">
+                  <caret line="28" selection-start-line="28" selection-end-line="28" />
+                  <folding>
+                    <element signature="e#999#1000#0" expanded="true" />
+                    <element signature="e#1045#1046#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -170,8 +186,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/lab/entity/Product.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="302">
-                  <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
+                <state relative-caret-position="720">
+                  <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -182,19 +198,11 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/lab/controllers/ProductRESTController.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="300">
-                  <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+                <state relative-caret-position="760">
+                  <caret line="52" column="9" lean-forward="true" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
                   <folding>
-                    <element signature="e#509#510#0" expanded="true" />
-                    <element signature="e#542#543#0" expanded="true" />
-                    <element signature="e#605#606#0" expanded="true" />
-                    <element signature="e#649#650#0" expanded="true" />
-                    <element signature="e#731#732#0" expanded="true" />
-                    <element signature="e#774#775#0" expanded="true" />
-                    <element signature="e#872#873#0" expanded="true" />
-                    <element signature="e#922#923#0" expanded="true" />
+                    <element signature="e#963#964#0" expanded="true" />
                     <element signature="e#1009#1010#0" expanded="true" />
-                    <element signature="e#1061#1062#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -235,6 +243,7 @@
       <find>user</find>
       <find>Product</find>
       <find>/OrderItems</find>
+      <find>orderItem</find>
     </findStrings>
     <replaceStrings>
       <replace>create</replace>
@@ -252,6 +261,7 @@
       <replace>product</replace>
       <replace>orderItem</replace>
       <replace>/orderItems</replace>
+      <replace>basket</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -273,12 +283,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/lab/service/MongoDBUserDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lab/service/JDBCProductDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lab/JDBCFacade.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lab/database.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/lab/mappers/UserMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lab/controllers/service/MongoDBOrderDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/lab/controllers/MongoDBOrderDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/lab/controllers/RestController.java" />
         <option value="$PROJECT_DIR$/src/main/java/lab/controllers/JDBCOrderDao.java" />
@@ -298,14 +302,11 @@
         <option value="$PROJECT_DIR$/src/main/resources/orders.sql" />
         <option value="$PROJECT_DIR$/src/main/java/lab/controllers/ProductController.java" />
         <option value="$PROJECT_DIR$/src/main/java/lab/service/JDBCOrderDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lab/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/lab/service/UserRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/lab/UserService" />
         <option value="$PROJECT_DIR$/src/main/java/lab/repository/UserRespository.java" />
         <option value="$PROJECT_DIR$/src/main/java/lab/services/UserService" />
-        <option value="$PROJECT_DIR$/src/main/java/lab/AppConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/lab/controllers/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/lab/repository/JDBCProductDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/lab/repository/JDBCOrderDAO.java" />
@@ -313,17 +314,26 @@
         <option value="$PROJECT_DIR$/src/main/java/lab/repository/UserRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/lab/repository/ProductRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/lab/entity/Order.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lab/repository/OrderItemRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lab/controllers/OrderItemRESTController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lab/entity/OrderItem.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lab/entity/Product.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lab/entity/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/lab/controllers/ProductRESTController.java" />
         <option value="$PROJECT_DIR$/src/main/java/lab/controllers/UserRESTController.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/updates.xml" />
         <option value="$PROJECT_DIR$/ui.lnf.xml" />
         <option value="$PROJECT_DIR$/baseRefactoring.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/lab/entity/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lab/entity/OrderItem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lab/entity/Basket.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lab/controllers/OrderItemRESTController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lab/repository/OrderItemRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lab/repository/BastetRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lab/repository/BasketRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lab/AppConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/lab/controllers/BasketRESTController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lab/entity/Product.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lab/repository/CategoryRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lab/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lab/entity/Category.java" />
       </list>
     </option>
   </component>
@@ -355,9 +365,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="27" />
-    <option name="width" value="960" />
+    <option name="width" value="1739" />
     <option name="height" value="1053" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -368,6 +378,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -428,13 +439,25 @@
             </path>
             <path>
               <item name="lab02" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lab02" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lab02" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lab02" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lab02" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -442,11 +465,11 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576264449496" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576354817190" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/lab" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../tets/spring-mvc" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
@@ -464,10 +487,10 @@
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="lab.repository" />
+      <recent name="lab.entity" />
       <recent name="lab.controllers" />
       <recent name="lab.mappers" />
       <recent name="lab.service" />
-      <recent name="lab" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="lab.controllers" />
@@ -621,7 +644,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576315448814</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="remove some files">
+      <created>1576315657060</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1576315657060</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TodoView">
@@ -634,9 +664,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-37" width="1920" height="1117" extended-state="6" />
+    <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8301887" visible="true" weight="0.19572192" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8301887" visible="true" weight="0.22352941" />
       <window_info id="Structure" order="1" sideWeight="0.16981132" side_tool="true" weight="0.18342246" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -648,15 +679,15 @@
       <window_info id="Job Explorer" order="9" sideWeight="0.497545" weight="0.32994652" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32867134" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8818182" weight="0.42757243" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8818182" visible="true" weight="0.18331504" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39846322" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32930845" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.6037433" weight="0.18551043" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5005348" side_tool="true" weight="0.32930845" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="9" sideWeight="0.49893048" visible="true" weight="0.32867134" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4983957" weight="0.2857143" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49893048" weight="0.32821077" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4983957" weight="0.28540066" />
       <window_info anchor="bottom" id="DB Execution Console" order="11" />
       <window_info anchor="bottom" id="Console" order="12" />
       <window_info anchor="bottom" id="Dependency Viewer" order="13" sideWeight="0.49946523" weight="0.32930845" />
@@ -721,12 +752,6 @@
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/lab/controllers/RestController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/lab/controllers/JDBCProductDao.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/lab/controllers/JDBCOrderDao.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/lab/service/MongoDBProductDao.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/lab/service/JDBCProductDao.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/lab/service/JDBCOrderDao.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/lab/JDBCFacade.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/lab/Util.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/lab/MongoDBDaoFactory.java" />
@@ -779,30 +804,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lab/AppConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/lab/repository/JDBCProductDAO.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/lab/repository/JDBCOrderDAO.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/lab/controllers/OrderController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/lab/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab/services/UserService" />
+    <entry file="file://$PROJECT_DIR$/project.default.xml" />
+    <entry file="file://$PROJECT_DIR$/updates.xml" />
+    <entry file="file://$PROJECT_DIR$/ui.lnf.xml" />
+    <entry file="file://$PROJECT_DIR$/other.xml" />
+    <entry file="file://$PROJECT_DIR$/vcs.xml" />
+    <entry file="file://$PROJECT_DIR$/baseRefactoring.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab/repository/ProductRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="120">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lab/repository/ProductRepository.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab/repository/UserRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
@@ -812,154 +841,160 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lab/repository/OrderItemRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/create.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="200">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" selection-start-column="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab/controllers/BasketRESTController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="e#496#497#0" expanded="true" />
+            <element signature="e#523#524#0" expanded="true" />
+            <element signature="e#583#584#0" expanded="true" />
+            <element signature="e#621#622#0" expanded="true" />
+            <element signature="e#696#697#0" expanded="true" />
+            <element signature="e#733#734#0" expanded="true" />
+            <element signature="e#822#823#0" expanded="true" />
+            <element signature="e#865#866#0" expanded="true" />
+            <element signature="e#945#946#0" expanded="true" />
+            <element signature="e#991#992#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/lab/controllers/OrderItemRESTController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
+        <state relative-caret-position="320">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
           <folding>
-            <element signature="e#519#520#0" expanded="true" />
-            <element signature="e#552#553#0" expanded="true" />
-            <element signature="e#617#618#0" expanded="true" />
-            <element signature="e#661#662#0" expanded="true" />
-            <element signature="e#749#750#0" expanded="true" />
-            <element signature="e#792#793#0" expanded="true" />
-            <element signature="e#900#901#0" expanded="true" />
-            <element signature="e#952#953#0" expanded="true" />
+            <element signature="e#999#1000#0" expanded="true" />
             <element signature="e#1045#1046#0" expanded="true" />
-            <element signature="e#1097#1098#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lab/entity/User.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab/entity/Basket.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lab/entity/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="580">
+          <caret line="38" column="32" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1095#1096#0" expanded="true" />
+            <element signature="e#1176#1177#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/lab/entity/OrderItem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        <state relative-caret-position="20">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lab/services/UserService">
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab/repository/BasketRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+        <state relative-caret-position="120">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab/repository/OrderItemRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab/entity/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
           <folding>
-            <element signature="e#370#371#0" expanded="true" />
-            <element signature="e#411#412#0" expanded="true" />
-            <element signature="e#456#457#0" expanded="true" />
-            <element signature="e#500#501#0" expanded="true" />
-            <element signature="e#534#535#0" expanded="true" />
-            <element signature="e#577#578#0" expanded="true" />
-            <element signature="e#614#615#0" expanded="true" />
-            <element signature="e#653#654#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lab/repository/UserRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab/AppConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="340">
+          <caret line="23" column="18" lean-forward="true" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#740#741#0" expanded="true" />
+            <element signature="e#782#783#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab/repository/CategoryRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab/entity/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="592">
+          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+          <folding>
+            <element signature="e#572#573#0" expanded="true" />
+            <element signature="e#598#599#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="20" selection-start-line="2" selection-start-column="7" selection-end-line="10" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/lab/controllers/UserRESTController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="280">
+          <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1010#1011#0" expanded="true" />
-            <element signature="e#1062#1063#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project.default.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/updates.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ui.lnf.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/other.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vcs.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baseRefactoring.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/lab/controllers/ProductRESTController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
+        <state relative-caret-position="760">
+          <caret line="52" column="9" lean-forward="true" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
           <folding>
-            <element signature="e#509#510#0" expanded="true" />
-            <element signature="e#542#543#0" expanded="true" />
-            <element signature="e#605#606#0" expanded="true" />
-            <element signature="e#649#650#0" expanded="true" />
-            <element signature="e#731#732#0" expanded="true" />
-            <element signature="e#774#775#0" expanded="true" />
-            <element signature="e#872#873#0" expanded="true" />
-            <element signature="e#922#923#0" expanded="true" />
+            <element signature="e#963#964#0" expanded="true" />
             <element signature="e#1009#1010#0" expanded="true" />
-            <element signature="e#1061#1062#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="31" column="20" lean-forward="true" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -1020,6 +1055,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

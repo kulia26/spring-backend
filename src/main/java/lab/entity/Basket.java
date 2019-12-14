@@ -14,21 +14,17 @@ import java.util.List;
 @Entity
 
 @Data
-public class Product {
+public class Basket {
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
 
-  private String name;
-
-  private Integer cost;
-
   @ManyToOne
   @JoinColumn
-  private Category category;
+  private User user;
 
-  @OneToMany(mappedBy = "product", fetch = FetchType.EAGER)
+  @OneToMany(mappedBy = "basket", fetch = FetchType.EAGER)
   @JsonBackReference
   private List<OrderItem> orderItems;
 
@@ -40,16 +36,14 @@ public class Product {
   @JsonIgnore
   private Date updatedAt;
 
-  public Product(Long id, String name, Integer cost) {
+  public Basket(Long id, User user) {
     this.id = id;
-    this.name = name;
-    this.cost = cost;
+    this.user = user;
   }
 
-  public Product() {
+  public Basket() {
 
   }
-
 
   public Long getId() {
     return id;
@@ -59,25 +53,16 @@ public class Product {
     this.id = id;
   }
 
-  public String getName() {
-    return name;
+  public User getUser() {
+    return user;
   }
 
-  public void setName(String name) {
-    this.name = name;
+  public void setUser(User user) {
+    this.user = user;
   }
-
-  public Integer getCost() {
-    return cost;
-  }
-
-  public void setCost(Integer cost) {
-    this.cost = cost;
-  }
-
 
   @Override
   public String toString() {
-    return "Product: {" + "id:" + id + ", name: " + name + ", cost: " + cost + "}\n";
+    return "Basket: {" + "id:" + id + ", user:" + this.user.toString() + '}';
   }
 }

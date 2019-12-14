@@ -27,7 +27,7 @@ public class User {
 
   @OneToMany(mappedBy = "user", fetch = FetchType.EAGER)
   @JsonBackReference
-  private List<OrderItem> orderItems;
+  private List<Basket> baskets;
 
   @CreationTimestamp
   @JsonIgnore
@@ -83,6 +83,6 @@ public class User {
 
   @Override
   public String toString() {
-    return "User{" + "id:" + id + ", phone:'" + phone + ", address:'" + address + ", name:'" + name + '}';
+    return "User: {" + "id:" + id + ", phone:'" + phone + ", address:'" + address + ", name:'" + name + '}';
   }
 }
