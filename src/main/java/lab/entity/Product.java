@@ -22,7 +22,14 @@ public class Product {
 
   private String name;
 
+  private String description;
+
   private Integer cost;
+
+  @Lob
+  @Column(columnDefinition = "mediumblob")
+  @JsonIgnore //
+  private byte[] image;
 
   @ManyToOne
   @JoinColumn
@@ -50,7 +57,18 @@ public class Product {
 
   }
 
+  public byte[] getImage() {
+    return image;
+  }
 
+  public void setImage(byte[] image) {
+    this.image = image;
+  }
+
+  public void setCategory(Category category) {
+    this.category = category;
+  }
+  
   public Long getId() {
     return id;
   }
@@ -65,6 +83,14 @@ public class Product {
 
   public void setName(String name) {
     this.name = name;
+  }
+
+  public String getDescription() {
+    return description;
+  }
+
+  public void setDescription(String description) {
+    this.description = description;
   }
 
   public Integer getCost() {

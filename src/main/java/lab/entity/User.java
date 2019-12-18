@@ -10,9 +10,8 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import javax.persistence.*;
-import java.util.Collection;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
+import java.util.stream.Collectors;
 
 @Entity
 
@@ -30,11 +29,12 @@ public class User implements UserDetails {
   private String name;
 
   @Transient
+  @JsonIgnore
   private Collection<? extends GrantedAuthority> authorities;
 
   @Lob
+  @Column(columnDefinition = "mediumblob")
   @JsonIgnore //
-  @Transient  // for testing
   private byte[] image;
 
   @OneToMany(mappedBy = "user", fetch = FetchType.EAGER)
@@ -49,17 +49,23 @@ public class User implements UserDetails {
   @JsonIgnore
   private Date updatedAt;
 
-  public User(Long id, String name, String password, String phone, byte[] image) {
+  @ManyToMany(fetch = FetchType.EAGER)
+  @JoinTable(name = "user_roles",
+      joinColumns = @JoinColumn(name = "user_id"),
+      inverseJoinColumns = @JoinColumn(name = "role_id"))
+  private Set<Role> roles = new HashSet<>();
+
+  public User(Long id, String name, String password, String phone, byte[] image, Set<Role> roles) {
     this.id = id;
     this.phone = phone;
     this.password = password;
     this.name = name;
     this.image = image;
+    this.roles = roles;
+    this.authorities = roles.stream().map(role ->
+        new SimpleGrantedAuthority(role.getName().name())
+    ).collect(Collectors.toList());
 
-    Collection<GrantedAuthority> authorities = null;
-    authorities.add(new SimpleGrantedAuthority("ADMIN"));
-
-    this.authorities = authorities;
   }
 
   public User() {
@@ -82,8 +88,10 @@ public class User implements UserDetails {
     this.phone = phone;
   }
 
-  @Transient
   public Collection<? extends GrantedAuthority> getAuthorities() {
+    authorities = roles.stream().map(role ->
+        new SimpleGrantedAuthority(role.getName().name())
+    ).collect(Collectors.toList());
     return authorities;
   }
 
@@ -136,8 +144,19 @@ public class User implements UserDetails {
     this.image = image;
   }
 
+  public Set<Role> getRoles() {
+    return roles;
+  }
+
+  public void setRoles(Set<Role> roles) {
+    this.roles = roles;
+  }
+
   @Override
   public String toString() {
-    return "User: {" + "id:" + id + ", phone:'" + phone + "', password:'" + password + "', name:'" + name + '}';
+    return "User: {" + "id:" + id +
+        ", phone:'" + phone +
+        "', password:'" + password +
+        "', name:'" + name + "' }";
   }
 }
