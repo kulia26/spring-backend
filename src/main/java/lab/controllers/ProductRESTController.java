@@ -11,6 +11,9 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
+import java.util.Optional;
+
+import static java.lang.Integer.parseInt;
 
 @RestController
 @RequestMapping(value = "/", produces = {MediaType.APPLICATION_JSON_VALUE})
@@ -48,7 +51,7 @@ public class ProductRESTController {
                        @RequestParam("image") MultipartFile image) {
     Product newProduct = new Product();
     newProduct.setName(name);
-    newProduct.setCost(Integer.parseInt(cost));
+    newProduct.setCost(parseInt(cost));
     newProduct.setDescription(desc);
     System.out.println("category1: " + category);
     Category cat = categoryRepository.findByName(category).get(0);
@@ -75,19 +78,36 @@ public class ProductRESTController {
     return repository.findById(id).get();
   }
 
-  @PutMapping("/products/{id}")
-  Product updateProduct(@RequestBody Product newProduct, @PathVariable Long id) {
+  @Secured("ROLE_ADMIN")
+  @PutMapping(value = "/products/{id}", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
+  Product registerUser(@PathVariable Long id,
+                       @RequestParam("name") String name,
+                       @RequestParam("cost") String cost,
+                       @RequestParam("description") String desc,
+                       @RequestParam("category") String category,
+                       @RequestParam("image") Optional<MultipartFile> image) {
 
     return repository.findById(id).map(product -> {
-      product.setName(newProduct.getName());
-      product.setCost(newProduct.getCost());
+      product.setName(name);
+      product.setCost(parseInt(cost));
+      product.setDescription(desc);
+      Category cat = categoryRepository.findByName(category).get(0);
+      product.setCategory(cat);
+      if (image.isPresent()) {
+        try {
+          byte[] imageBytes = image.get().getBytes();
+          product.setImage(imageBytes);
+        } catch (Exception e) {
+          return null;
+        }
+      }
       return repository.save(product);
     }).orElseGet(() -> {
-      newProduct.setId(id);
-      return repository.save(newProduct);
+      return null;
     });
   }
 
+  @Secured("ROLE_ADMIN")
   @DeleteMapping("/products/{id}")
   void deleteProduct(@PathVariable Long id) {
     repository.deleteById(id);
