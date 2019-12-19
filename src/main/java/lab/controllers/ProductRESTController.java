@@ -37,11 +37,6 @@ public class ProductRESTController {
     return repository.findAll();
   }
 
-  //@PostMapping("/products")
-  //Product createOrSaveProduct(@RequestBody Product newProduct) {
-  // return repository.save(newProduct);
-  //}
-
   @Secured("ROLE_ADMIN")
   @PostMapping(value = "/products", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
   Product registerUser(@RequestParam("name") String name,

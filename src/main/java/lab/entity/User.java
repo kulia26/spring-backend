@@ -3,6 +3,7 @@ package lab.entity;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
+import org.codehaus.jackson.map.annotate.JsonSerialize;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 import org.springframework.security.core.GrantedAuthority;
@@ -20,6 +21,7 @@ public class User implements UserDetails {
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @JsonSerialize
   private Long id;
 
   private String phone;
@@ -27,6 +29,11 @@ public class User implements UserDetails {
   private String password;
 
   private String name;
+
+
+  @OneToMany(mappedBy = "user", fetch = FetchType.EAGER)
+  @JsonBackReference
+  private List<OrderItem> orderItems;
 
   @Transient
   @JsonIgnore
@@ -36,10 +43,6 @@ public class User implements UserDetails {
   @Column(columnDefinition = "mediumblob")
   @JsonIgnore //
   private byte[] image;
-
-  @OneToMany(mappedBy = "user", fetch = FetchType.EAGER)
-  @JsonBackReference
-  private List<Basket> baskets;
 
   @CreationTimestamp
   @JsonIgnore

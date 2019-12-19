@@ -24,7 +24,9 @@ public class OrderItem {
 
   @ManyToOne
   @JoinColumn
-  private Basket basket;
+  private User user;
+
+  private Boolean isCompleted;
 
   @CreationTimestamp
   @JsonIgnore
@@ -34,10 +36,11 @@ public class OrderItem {
   @JsonIgnore
   private Date updatedAt;
 
-  public OrderItem(Long id, Basket basket, Product product) {
+  public OrderItem(Long id, User user, Product product, Boolean isCompleted) {
     this.id = id;
-    this.basket = basket;
+    this.user = user;
     this.product = product;
+    this.isCompleted = isCompleted;
   }
 
   public OrderItem() {
@@ -52,12 +55,12 @@ public class OrderItem {
     this.id = id;
   }
 
-  public Basket getBasket() {
-    return basket;
+  public User getUser() {
+    return user;
   }
 
-  public void setBasket(Basket basket) {
-    this.basket = basket;
+  public void setUser(User user) {
+    this.user = user;
   }
 
   public Product getProduct() {
@@ -70,6 +73,14 @@ public class OrderItem {
 
   @Override
   public String toString() {
-    return "OrderItem: {" + "id:" + id + ", basket:" + this.basket.toString() + ", product:" + this.product.toString() + '}';
+    return "OrderItem: {" + "id:" + id + ", basket:" + this.user.toString() + ", product:" + this.product.toString() + '}';
+  }
+
+  public Boolean getCompleted() {
+    return isCompleted;
+  }
+
+  public void setCompleted(Boolean completed) {
+    isCompleted = completed;
   }
 }

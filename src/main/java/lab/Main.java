@@ -25,14 +25,13 @@ public class Main implements WebMvcConfigurer {
         app.run(args);
     }
 
-    @Override
-    public void addCorsMappings(CorsRegistry registry) {
-
-        registry
-            .addMapping("/**")
-            .allowedMethods("*")
-            .allowedMethods("HEAD", "OPTIONS", "GET", "POST", "PUT", "PATCH", "DELETE");
-    }
+  @Override
+  public void addCorsMappings(CorsRegistry registry) {
+    registry.addMapping("/**")
+        .allowedMethods("*")
+        //.allowedOrigins("http://localhost:3000");
+        .allowedOrigins("*");
+  }
 
   @Bean
   public DataSource dataSource() {
