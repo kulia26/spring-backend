@@ -10,6 +10,7 @@ import org.springframework.security.access.annotation.Secured;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -68,10 +69,24 @@ public class ProductRESTController {
     return repository.findById(id).get().getImage();
   }
 
-  @GetMapping("/products/{id}")
-  Product getProductById(@PathVariable Long id) {
-    return repository.findById(id).get();
+
+  @GetMapping("/findProducts")
+  @ResponseBody
+  public List<Product> findProducts(@RequestParam String query) {
+    List<Product> all = repository.findAll();
+    ArrayList<Product> finded = new ArrayList<Product>();
+    for (Product p : all) {
+      if (p.getName().toLowerCase().contains(query.toLowerCase())) {
+        finded.add(p);
+      } else {
+        if (p.getDescription().toLowerCase().contains(query.toLowerCase())) {
+          finded.add(p);
+        }
+      }
+    }
+    return finded;
   }
+
 
   @Secured("ROLE_ADMIN")
   @PutMapping(value = "/products/{id}", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)

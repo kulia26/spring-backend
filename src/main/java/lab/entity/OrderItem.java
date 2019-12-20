@@ -1,5 +1,6 @@
 package lab.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;
@@ -24,12 +25,12 @@ public class OrderItem {
 
   @ManyToOne
   @JoinColumn
+  @JsonBackReference
   private User user;
 
   private Boolean isCompleted;
 
   @CreationTimestamp
-  @JsonIgnore
   private Date createdAt;
 
   @UpdateTimestamp
@@ -76,11 +77,11 @@ public class OrderItem {
     return "OrderItem: {" + "id:" + id + ", basket:" + this.user.toString() + ", product:" + this.product.toString() + '}';
   }
 
-  public Boolean getCompleted() {
+  public Boolean getIsCompletedCompleted() {
     return isCompleted;
   }
 
-  public void setCompleted(Boolean completed) {
-    isCompleted = completed;
+  public void setIsCompleted(Boolean isCompleted) {
+    this.isCompleted = isCompleted;
   }
 }

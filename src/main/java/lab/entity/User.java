@@ -1,6 +1,5 @@
 package lab.entity;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import org.codehaus.jackson.map.annotate.JsonSerialize;
@@ -32,7 +31,8 @@ public class User implements UserDetails {
 
 
   @OneToMany(mappedBy = "user", fetch = FetchType.EAGER)
-  @JsonBackReference
+  //@JsonBackReference
+  @JsonSerialize
   private List<OrderItem> orderItems;
 
   @Transient
