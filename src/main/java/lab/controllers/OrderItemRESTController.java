@@ -40,7 +40,7 @@ public class OrderItemRESTController {
   @PutMapping("/orderItems/{id}")
   OrderItem updateOrderItem(@RequestBody OrderItem newOrderItem, @PathVariable Long id) {
     return repository.findById(id).map(OrderItem -> {
-      OrderItem.setIsCompleted(newOrderItem.getIsCompletedCompleted());
+      OrderItem.setIsCompleted(newOrderItem.getIsCompleted());
       return repository.save(OrderItem);
     }).orElseGet(() -> {
       newOrderItem.setId(id);

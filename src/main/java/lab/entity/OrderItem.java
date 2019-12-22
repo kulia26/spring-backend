@@ -77,7 +77,7 @@ public class OrderItem {
     return "OrderItem: {" + "id:" + id + ", basket:" + this.user.toString() + ", product:" + this.product.toString() + '}';
   }
 
-  public Boolean getIsCompletedCompleted() {
+  public Boolean getIsCompleted() {
     return isCompleted;
   }
 

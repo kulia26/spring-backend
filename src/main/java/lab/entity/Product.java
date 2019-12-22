@@ -35,7 +35,7 @@ public class Product {
   @JoinColumn
   private Category category;
 
-  @OneToMany(mappedBy = "product", fetch = FetchType.EAGER)
+  @OneToMany(mappedBy = "product", fetch = FetchType.EAGER, cascade = CascadeType.REMOVE, orphanRemoval = true)
   @JsonBackReference
   private List<OrderItem> orderItems;
 
