@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70ac98d7-19cb-41a8-ba22-5a543ab2fd82" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab/controllers/OrderItemRESTController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab/controllers/OrderItemRESTController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab/entity/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab/entity/OrderItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab/entity/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab/entity/User.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,23 +18,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/lab/entity/OrderItem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+            <state relative-caret-position="462">
+              <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/lab/controllers/OrderItemRESTController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="651">
-              <caret line="47" column="7" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
-              <folding>
-                <element signature="e#999#1000#0" expanded="true" />
-                <element signature="e#1045#1046#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -93,8 +76,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/lab/entity/Product.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="42" selection-start-line="42" selection-end-line="42" />
+            <state relative-caret-position="672">
+              <caret line="40" selection-start-line="40" selection-end-line="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -102,11 +85,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="110" column="24" selection-start-line="110" selection-start-column="24" selection-end-line="110" selection-end-column="24" />
+            <state relative-caret-position="323">
+              <caret line="58" column="21" lean-forward="true" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/lab/JwtTokenProvider.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
+              <caret line="13" column="31" lean-forward="true" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -141,36 +133,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>persis</find>
-      <find>product</find>
-      <find>getAll</find>
-      <find>eser</find>
-      <find>user</find>
-      <find>Product</find>
-      <find>/OrderItems</find>
-      <find>orderItem</find>
-      <find>Address</find>
-      <find>address</find>
-      <find>authorities</find>
-      <find>BCrypt</find>
-      <find>password</find>
-      <find>UsernamePasswordAuthenticationToken</find>
-      <find>PasswordEncoder</find>
-      <find>username</find>
-      <find>Optional&lt;Category&gt;</find>
-      <find>setR</find>
-      <find>regi</find>
-      <find>RepositoryRestC</find>
-      <find>RepositoryRestConfigurer</find>
-      <find>CorsRegistry</find>
-      <find>local</find>
-      <find>sys</find>
-      <find>16</find>
-      <find>login</find>
       <find>produ</find>
       <find>findById</find>
       <find>completed</find>
       <find>Completed</find>
+      <find>jjwt</find>
+      <find>@ConfigurationProperties</find>
+      <find>ConfigurationProperties</find>
+      <find>@Configuration</find>
+      <find>addCorsMappings</find>
+      <find>@EnableGlobalMethodSecurity</find>
+      <find>@EnableGlobalMethodSecurity(</find>
+      <find>HttpCookieOAuth2AuthorizationRequestRepository</find>
+      <find>email</find>
+      <find>TokenProvider</find>
+      <find>CustomOAuth2UserService</find>
+      <find>CustomUserDetailsService</find>
+      <find>RestAuthenticationEntryPoint</find>
+      <find>c</find>
+      <find>Bearer</find>
+      <find>String message</find>
+      <find>OAuth2AuthenticationProcessingException</find>
+      <find>OAuth2AuthenticationSuccessHandler</find>
+      <find>OAuth2AuthenticationFailureHandler</find>
+      <find>default</find>
+      <find>AuthProvider</find>
+      <find>provider</find>
+      <find>ResourceNotFoundException</find>
+      <find>phone</find>
+      <find>image</find>
+      <find>GetMapping</find>
     </findStrings>
     <replaceStrings>
       <replace>create</replace>
@@ -206,6 +198,11 @@
     </option>
     <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="PUSH_TAGS">
       <GitPushTagMode />
     </option>
@@ -213,57 +210,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/lab/service/JDBCUserDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/users.sql" />
-        <option value="$PROJECT_DIR$/src/main/resources/products.sql" />
-        <option value="$PROJECT_DIR$/src/main/resources/orders.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/lab/controllers/ProductController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lab/service/JDBCOrderDAO.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/main/java/lab/service/UserRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lab/UserService" />
-        <option value="$PROJECT_DIR$/src/main/java/lab/repository/UserRespository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lab/services/UserService" />
-        <option value="$PROJECT_DIR$/src/main/java/lab/controllers/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lab/repository/JDBCProductDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lab/repository/JDBCOrderDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lab/controllers/OrderController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lab/entity/Order.java" />
-        <option value="$PROJECT_DIR$/updates.xml" />
-        <option value="$PROJECT_DIR$/ui.lnf.xml" />
-        <option value="$PROJECT_DIR$/baseRefactoring.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/lab/repository/BastetRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/hibernate.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/lab/services/CustomUserDetailsService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lab/JwtAuthenticationEntryPoint.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lab/JwtAuthenticationFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lab/JwtTokenProvider.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lab/JwtAuthenticationResponse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lab/entity/Category.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lab/AppConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/lab/entity/Role.java" />
         <option value="$PROJECT_DIR$/src/main/java/lab/entity/RoleName.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lab/SecurityConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/lab/repository/CategoryRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/lab/repository/BasketRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/lab/repository/OrderItemRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/lab/repository/RoleRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lab/repository/UserRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/lab/RepositoryRestMvcConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/lab/MyCoolConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/lab/RepositoryRestConfigurerAdapter.java" />
         <option value="$PROJECT_DIR$/src/main/java/lab/controllers/BasketRESTController.java" />
         <option value="$PROJECT_DIR$/src/main/java/lab/entity/Basket.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lab/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/lab/repository/ProductRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lab/controllers/ProductRESTController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lab/controllers/UserRESTController.java" />
         <option value="$PROJECT_DIR$/src/main/java/lab/controllers/OrderItemRESTController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lab/entity/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/lab/entity/OrderItem.java" />
         <option value="$PROJECT_DIR$/src/main/java/lab/entity/Product.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/lab/AppProperties.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lab/entity/AuthProvider.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lab/OAuth2AuthenticationSuccessHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lab/OAuth2AuthenticationFailureHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lab/CookieUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lab/services/utils/CookieUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lab/utils/CookieUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lab/HttpCookieOAuth2AuthorizationRequestRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lab/util/CookieUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lab/util/GithubOAuth2UserInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lab/security/OAuth2UserInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lab/security/OAuth2UserInfoFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lab/security/TokenProvider.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lab/JwtTokenProvider.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lab/TokenProvider.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lab/TokenAuthenticationFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lab/security/RestAuthenticationEntryPoint.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lab/security/CurrentUser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lab/AuthResponse.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lab/ApiResponse.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lab/BadRequestException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lab/ResourceNotFoundException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lab/OAuth2AuthenticationProcessingException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lab/security/OAuth2AuthenticationSuccessHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lab/SecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lab/security/OAuth2AuthenticationFailureHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.yaml" />
+        <option value="$PROJECT_DIR$/src/main/resources/hibernate.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/lab/repository/UserRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lab/services/CustomUserDetailsService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lab/controllers/UserRESTController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lab/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lab/controllers/ProductRESTController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lab/CustomOAuth2UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lab/entity/User.java" />
       </list>
     </option>
   </component>
@@ -295,8 +292,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="4">
-    <option name="x" value="960" />
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="27" />
     <option name="width" value="960" />
     <option name="height" value="1053" />
@@ -309,8 +305,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -386,7 +382,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576745008696" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1577132872939" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/lab" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../tets/spring-mvc" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -411,12 +407,13 @@
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="lab" />
-      <recent name="lab.repository" />
+      <recent name="lab.security" />
+      <recent name="lab.util" />
       <recent name="lab.entity" />
-      <recent name="lab.controllers" />
-      <recent name="lab.mappers" />
+      <recent name="lab.repository" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="lab.security" />
       <recent name="lab" />
       <recent name="lab.controllers" />
     </key>
@@ -618,7 +615,28 @@
       <option name="project" value="LOCAL" />
       <updated>1576877216553</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="final without github auth">
+      <created>1577001707490</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1577001707490</updated>
+    </task>
+    <task id="LOCAL-00024" summary="add github auth">
+      <created>1577128680235</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1577128680235</updated>
+    </task>
+    <task id="LOCAL-00025" summary="update products controller">
+      <created>1577132735798</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1577132735798</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TodoView">
@@ -631,10 +649,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="960" y="27" width="960" height="1053" extended-state="4" />
-    <editor active="true" />
+    <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8301887" visible="true" weight="0.228125" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8301887" visible="true" weight="0.20520833" />
       <window_info id="Structure" order="1" sideWeight="0.16981132" side_tool="true" weight="0.18342246" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -646,13 +663,13 @@
       <window_info id="Job Explorer" order="9" sideWeight="0.497545" weight="0.32994652" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32800853" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8818182" weight="0.314164" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8818182" weight="0.44195953" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39846322" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32930845" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.6037433" weight="0.18551043" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5005348" side_tool="true" weight="0.32930845" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5005348" side_tool="true" weight="0.3290735" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49893048" weight="0.32821077" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4983957" weight="0.34611288" />
       <window_info anchor="bottom" id="DB Execution Console" order="11" />
@@ -720,156 +737,15 @@
     <MESSAGE value="add product edit and remove" />
     <MESSAGE value="remove basket item" />
     <MESSAGE value="update controllers" />
-    <option name="LAST_COMMIT_MESSAGE" value="update controllers" />
+    <MESSAGE value="final without github auth" />
+    <MESSAGE value="add github auth" />
+    <MESSAGE value="update products controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="update products controller" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/lab/mappers/OrderMapper.java" />
-    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-dependencies/2.1.6.RELEASE/spring-boot-dependencies-2.1.6.RELEASE.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42100">
-          <caret line="2105" column="13" selection-start-line="2105" selection-start-column="13" selection-end-line="2105" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lab02.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lab/mappers/ProductMapper.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/lab/mappers/UserMapper.java" />
-    <entry file="file://$PROJECT_DIR$/../lab01/src/lab/JDBCFacade.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lab/repository/JDBCProductDAO.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/lab/repository/JDBCOrderDAO.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/lab/controllers/OrderController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/lab/services/UserService" />
-    <entry file="file://$PROJECT_DIR$/project.default.xml" />
-    <entry file="file://$PROJECT_DIR$/updates.xml" />
-    <entry file="file://$PROJECT_DIR$/ui.lnf.xml" />
-    <entry file="file://$PROJECT_DIR$/other.xml" />
-    <entry file="file://$PROJECT_DIR$/vcs.xml" />
-    <entry file="file://$PROJECT_DIR$/baseRefactoring.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/create.sql" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/jdk-11.0.2/lib/src.zip!/java.base/java/lang/NumberFormatException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lab/AppConfig.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="42" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lab/services/CustomUserDetailsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/jdk-11.0.2/lib/src.zip!/java.base/java/util/function/Function.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lab/RepositoryRestMvcConfiguration.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/lab/MyCoolConfiguration.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/lab/controllers/BasketRESTController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/lab/repository/BasketRepository.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/lab/entity/Basket.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/lab/RepositoryConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lab/JwtTokenProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="57" column="42" lean-forward="true" selection-start-line="57" selection-start-column="42" selection-end-line="57" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lab/JwtAuthenticationResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="24" column="3" lean-forward="true" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
-          <folding>
-            <element signature="e#180#181#0" expanded="true" />
-            <element signature="e#220#221#0" expanded="true" />
-            <element signature="e#256#257#0" expanded="true" />
-            <element signature="e#284#285#0" expanded="true" />
-            <element signature="e#336#337#0" expanded="true" />
-            <element signature="e#376#377#0" expanded="true" />
-            <element signature="e#410#411#0" expanded="true" />
-            <element signature="e#436#437#0" expanded="true" />
-            <element signature="e#484#485#0" expanded="true" />
-            <element signature="e#520#521#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lab/JwtAuthenticationFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lab/JwtAuthenticationEntryPoint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/lab/repository/CategoryRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -891,64 +767,216 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lab/SecurityConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab/controllers/OrderItemRESTController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+        <state relative-caret-position="693">
+          <caret line="47" column="7" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
+          <folding>
+            <element signature="e#999#1000#0" expanded="true" />
+            <element signature="e#1045#1046#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="58" column="21" lean-forward="true" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab/AppProperties.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab/entity/RoleName.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab/repository/ProductRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1616#1617#0" expanded="true" />
-            <element signature="e#1662#1663#0" expanded="true" />
-            <element signature="e#2150#2151#0" expanded="true" />
-            <element signature="e#2194#2195#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab/util/CookieUtils.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab/security/TokenProvider.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab/TokenProvider.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab/security/RestAuthenticationEntryPoint.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab/AuthResponse.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab/ApiResponse.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab/BadRequestException.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab/OAuth2AuthenticationSuccessHandler.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab/security/OAuth2AuthenticationSuccessHandler.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab/OAuth2AuthenticationFailureHandler.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yaml" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-oauth2-client/5.1.5.RELEASE/spring-security-oauth2-client-5.1.5.RELEASE.jar!/org/springframework/security/oauth2/client/authentication/OAuth2LoginAuthenticationProvider.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="58" column="38" selection-start-line="58" selection-start-column="38" selection-end-line="58" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-oauth2-client/5.1.5.RELEASE/spring-security-oauth2-client-5.1.5.RELEASE.jar!/org/springframework/security/oauth2/client/userinfo/DefaultOAuth2UserService.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="45" column="43" lean-forward="true" selection-start-line="45" selection-start-column="43" selection-end-line="45" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab/util/GithubOAuth2UserInfo.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab/security/CurrentUser.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab/security/OAuth2AuthenticationFailureHandler.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab/security/OAuth2UserInfoFactory.java" />
+    <entry file="jar:///usr/lib/jvm/jdk-11.0.2/lib/src.zip!/java.base/java/util/function/Predicate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="54" column="16" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab/entity/AuthProvider.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab/entity/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab/entity/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab/entity/OrderItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab/entity/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/jdk-11.0.2/lib/src.zip!/java.base/java/util/function/Supplier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab/security/OAuth2UserInfo.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab/SecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="123" column="26" selection-start-line="123" selection-start-column="26" selection-end-line="123" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab/ResourceNotFoundException.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab/RepositoryConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab/OAuth2AuthenticationProcessingException.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab/JwtAuthenticationEntryPoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab/HttpCookieOAuth2AuthorizationRequestRepository.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab/TokenAuthenticationFilter.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab/repository/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab/services/CustomUserDetailsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab/CustomOAuth2UserService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab/controllers/UserRESTController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1890">
+          <caret line="121" column="31" selection-start-line="121" selection-start-column="31" selection-end-line="121" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/lab/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lab/repository/UserRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1414#1415#0" expanded="true" />
+            <element signature="e#1466#1467#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/lab/entity/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lab/entity/OrderItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        <state relative-caret-position="260">
+          <caret line="208" column="42" selection-start-line="208" selection-start-column="42" selection-end-line="208" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lab/controllers/OrderItemRESTController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="47" column="7" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
-          <folding>
-            <element signature="e#999#1000#0" expanded="true" />
-            <element signature="e#1045#1046#0" expanded="true" />
+            <element signature="e#4206#4207#0" expanded="true" />
+            <element signature="e#4231#4232#0" expanded="true" />
+            <element signature="e#4277#4278#0" expanded="true" />
+            <element signature="e#4311#4312#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -964,61 +992,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lab/repository/ProductRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lab/entity/Category.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lab/controllers/UserRESTController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1890">
-          <caret line="121" column="31" selection-start-line="121" selection-start-column="31" selection-end-line="121" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lab/entity/RoleName.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab/JwtTokenProvider.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lab/entity/Role.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lab/entity/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="110" column="24" selection-start-line="110" selection-start-column="24" selection-end-line="110" selection-end-column="24" />
+          <caret line="13" column="31" lean-forward="true" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
         </state>
       </provider>
     </entry>
