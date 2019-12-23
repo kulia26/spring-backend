@@ -46,6 +46,8 @@ public class User implements UserDetails, OAuth2User {
   @JsonIgnore //
   private byte[] image;
 
+  private String imageUrl;
+
   @CreationTimestamp
   @JsonIgnore
   private Date createdAt;
@@ -200,4 +202,11 @@ public class User implements UserDetails, OAuth2User {
     this.attributes = attributes;
   }
 
+  public String getImageUrl() {
+    return imageUrl;
+  }
+
+  public void setImageUrl(String imageUrl) {
+    this.imageUrl = imageUrl;
+  }
 }

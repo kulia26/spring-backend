@@ -84,13 +84,13 @@ public class CustomOAuth2UserService extends DefaultOAuth2UserService {
     roles.add(userRole);
 
     user.setRoles(roles);
-    //user.setImageUrl(oAuth2UserInfo.getImageUrl());
+    user.setImageUrl(oAuth2UserInfo.getImageUrl());
     return userRepository.save(user);
   }
 
   private User updateExistingUser(User existingUser, OAuth2UserInfo oAuth2UserInfo) {
     existingUser.setName(oAuth2UserInfo.getName());
-    // existingUser.setImageUrl(oAuth2UserInfo.getImageUrl());
+    existingUser.setImageUrl(oAuth2UserInfo.getImageUrl());
     return userRepository.save(existingUser);
   }
 
