@@ -123,4 +123,9 @@ public class ProductRESTController {
     repository.deleteById(id);
   }
 
+  @GetMapping("/products/{id}")
+  Optional<Product> findProduct(@PathVariable Long id) {
+    return repository.findById(id);
+  }
+
 }
