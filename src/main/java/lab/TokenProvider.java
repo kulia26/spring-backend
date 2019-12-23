@@ -11,15 +11,22 @@ import org.springframework.stereotype.Component;
 import java.util.Date;
 
 @Component
-public class JwtTokenProvider {
+public class TokenProvider {
 
-  private static final Logger logger = LoggerFactory.getLogger(JwtTokenProvider.class);
+  private static final Logger logger = LoggerFactory.getLogger(TokenProvider.class);
 
-  @Value("${app.jwtSecret}")
+  @Value("${app.auth.tokenSecret}")
   private String jwtSecret;
 
-  @Value("${app.jwtExpirationInMs}")
+  @Value("${app.auth.tokenExpirationMsec}")
   private int jwtExpirationInMs;
+
+  private AppProperties appProperties;
+
+  public TokenProvider(AppProperties appProperties) {
+    this.appProperties = appProperties;
+  }
+
 
   public String generateToken(Authentication authentication) {
 
@@ -36,7 +43,22 @@ public class JwtTokenProvider {
         .compact();
   }
 
-  public Long getUserIdFromJWT(String token) {
+  public String createToken(Authentication authentication) {
+    User userPrincipal = (User) authentication.getPrincipal();
+
+    Date now = new Date();
+    Date expiryDate = new Date(now.getTime() + appProperties.getAuth().getTokenExpirationMsec());
+
+    return Jwts.builder()
+        .setSubject(Long.toString(userPrincipal.getId()))
+        .setIssuedAt(new Date())
+        .setExpiration(expiryDate)
+        .signWith(SignatureAlgorithm.HS512, appProperties.getAuth().getTokenSecret())
+        .compact();
+  }
+
+
+  public Long getUserIdFromToken(String token) {
     Claims claims = Jwts.parser()
         .setSigningKey(jwtSecret)
         .parseClaimsJws(token)

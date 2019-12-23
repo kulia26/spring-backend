@@ -9,7 +9,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.List;
+import java.util.Optional;
 
 @Service
 public class CustomUserDetailsService implements UserDetailsService {
@@ -22,8 +22,8 @@ public class CustomUserDetailsService implements UserDetailsService {
   public User loadUserByUsername(String phone)
       throws UsernameNotFoundException {
     try {
-      List<User> users = userRepository.findByPhone(phone);
-      return users.get(0);
+      Optional<User> users = userRepository.findByPhone(phone);
+      return users.get();
     } catch (UsernameNotFoundException e) {
       new UsernameNotFoundException("User not found with phone : " + phone);
       return null;

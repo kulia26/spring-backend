@@ -8,20 +8,23 @@ import org.hibernate.annotations.UpdateTimestamp;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.oauth2.core.user.OAuth2User;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.util.*;
 import java.util.stream.Collectors;
 
 @Entity
 
 @Data
-public class User implements UserDetails {
+public class User implements UserDetails, OAuth2User {
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   @JsonSerialize
   private Long id;
+
 
   private String phone;
 
@@ -31,7 +34,6 @@ public class User implements UserDetails {
 
 
   @OneToMany(mappedBy = "user", fetch = FetchType.EAGER)
-  //@JsonBackReference
   @JsonSerialize
   private List<OrderItem> orderItems;
 
@@ -51,6 +53,16 @@ public class User implements UserDetails {
   @UpdateTimestamp
   @JsonIgnore
   private Date updatedAt;
+
+  @NotNull
+  @Enumerated(EnumType.STRING)
+  @Column(columnDefinition = "default 'local'")
+  private AuthProvider provider;
+
+  private String providerId;
+
+  @Transient
+  private Map<String, Object> attributes;
 
   @ManyToMany(fetch = FetchType.EAGER)
   @JoinTable(name = "user_roles",
@@ -162,4 +174,30 @@ public class User implements UserDetails {
         "', password:'" + password +
         "', name:'" + name + "' }";
   }
+
+  public String getProviderId() {
+    return providerId;
+  }
+
+  public void setProviderId(String providerId) {
+    this.providerId = providerId;
+  }
+
+  public AuthProvider getProvider() {
+    return provider;
+  }
+
+  public void setProvider(AuthProvider provider) {
+    this.provider = provider;
+  }
+
+  @Override
+  public Map<String, Object> getAttributes() {
+    return attributes;
+  }
+
+  public void setAttributes(Map<String, Object> attributes) {
+    this.attributes = attributes;
+  }
+
 }
